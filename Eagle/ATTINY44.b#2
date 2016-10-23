@@ -1678,7 +1678,9 @@ Please make sure your boards conform to these design rules.</description>
 <elements>
 <element name="C1" library="rcl" package="C0805" value="" x="20.32" y="10.795" rot="MR270"/>
 <element name="IC2" library="avr-5" package="SOIC14" value="TINY24/44/84-SSU" x="16.51" y="10.795" rot="R180"/>
-<element name="ISP1" library="adafruit" package="AVRISP" value="AVRISP-6" x="6.35" y="10.795" rot="R180"/>
+<element name="ISP1" library="adafruit" package="AVRISP" value="AVRISP-6" x="6.35" y="10.795" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.398" y="15.113" size="1.27" layer="25" rot="R270"/>
+</element>
 <element name="PWR" library="adafruit" package="CHIPLED_0805" value="" x="29.21" y="3.175" smashed="yes" rot="R135">
 <attribute name="NAME" x="31.64105" y="3.81" size="1.27" layer="25" rot="R225"/>
 <attribute name="VALUE" x="28.311971875" y="5.869078125" size="1.27" layer="27" rot="R225"/>
@@ -1687,20 +1689,30 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="3.81" y="0.743946875" size="1.27" layer="25" rot="R135"/>
 <attribute name="VALUE" x="5.869075" y="4.073025" size="1.27" layer="27" rot="R135"/>
 </element>
-<element name="R1" library="rcl" package="R0805" value="" x="7.62" y="5.08" rot="R180"/>
+<element name="R1" library="rcl" package="R0805" value="" x="7.62" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.255" y="-1.27" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="8.255" y="7.62" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="R2" library="rcl" package="R0805" value="10K" x="1.27" y="10.795" rot="R270"/>
-<element name="R3" library="rcl" package="R0805" value="" x="24.765" y="5.715" rot="R315"/>
-<element name="SV1" library="con-lstb" package="MA07-1" value="" x="16.51" y="1.905">
+<element name="R3" library="rcl" package="R0805" value="" x="24.765" y="5.715" smashed="yes" rot="R315">
+<attribute name="NAME" x="25.2140125" y="-1.8279625" size="1.27" layer="25" rot="R315"/>
+<attribute name="VALUE" x="22.519934375" y="4.367959375" size="1.27" layer="27" rot="R315"/>
+</element>
+<element name="SV1" library="con-lstb" package="MA07-1" value="" x="16.51" y="1.905" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="16.51" y="1.905" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="16.51" y="1.905" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="16.51" y="1.905" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="16.51" y="1.905" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.16" y="-1.524" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="13.97" y="-1.016" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SV2" library="con-lstb" package="MA07-1" value="" x="16.51" y="20.955" rot="R180">
+<element name="SV2" library="con-lstb" package="MA07-1" value="" x="16.51" y="20.955" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="16.51" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="16.51" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.51" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="16.51" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="19.05" y="28.194" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="19.05" y="23.876" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U1" library="MicroUSB" package="USB-MICRO-SMD" value="" x="30.48" y="10.795" rot="R180"/>
 <element name="RST" library="switch-tact" package="DTSM-3" value="RST" x="3.81" y="19.685" smashed="yes" rot="R315">

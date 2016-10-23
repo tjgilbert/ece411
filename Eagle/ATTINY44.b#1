@@ -1716,12 +1716,12 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U1" library="MicroUSB" package="USB-MICRO-SMD" value="" x="30.48" y="10.795" rot="R180"/>
 <element name="RST" library="switch-tact" package="DTSM-3" value="RST" x="3.81" y="19.685" smashed="yes" rot="R315">
-<attribute name="VALUE" x="0.589875" y="17.516971875" size="1.27" layer="27" rot="R315"/>
-<attribute name="NAME" x="3.81" y="22.6421" size="1.27" layer="25" rot="R315"/>
+<attribute name="VALUE" x="4.399875" y="22.596971875" size="1.27" layer="27" rot="R315"/>
+<attribute name="NAME" x="0" y="18.8321" size="1.27" layer="25" rot="R315"/>
 </element>
 <element name="PB1" library="switch-tact" package="DTSM-3" value="PB1" x="28.575" y="19.685" smashed="yes" rot="R45">
-<attribute name="VALUE" x="30.108025" y="16.464871875" size="1.27" layer="27" rot="R45"/>
-<attribute name="NAME" x="26.252896875" y="20.32" size="1.27" layer="25" rot="R45"/>
+<attribute name="VALUE" x="26.298025" y="20.274871875" size="1.27" layer="27" rot="R45"/>
+<attribute name="NAME" x="30.062896875" y="16.51" size="1.27" layer="25" rot="R45"/>
 </element>
 <element name="R4" library="rcl" package="R0805" value="10K" x="24.13" y="14.605" rot="MR90"/>
 </elements>

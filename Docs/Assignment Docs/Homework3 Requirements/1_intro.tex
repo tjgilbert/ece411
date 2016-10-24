@@ -1,11 +1,20 @@
 
 
-\rhead{ \fancyplain{}{Introduction} }
-\section{Introduction}
 
-\section{Project Overview}
+\section{Introduction}
+\rhead{ \fancyplain{}{Introduction/Requirements} }
+
+    \subsection{Objective}
+    This project will address a desire for wireless charging unit for a mobile phone or similar device. The charging unit will be portable and intuitive to use \textit{(portable and intuitive are defined further in the Requirements section)}. The basic use of the product requires the user to place their device on the charging unit pad. There will be no user inputs other than placing their device on the charging station.
+
+    \subsection{Needs Statement}
+     The need for this technology is sufficed by the convenient enhancements upon wired chargers. Wireless chargers are more convenient, because they negate the requirement of plugging and unplugging your device. The technology can also help people with physical impairments that are unable to manipulate traditional charging cords.
+     Wireless charging technology is also inherently more robust than a physical connector. Charging cords and receptacles can wear out or be damaged by careless insertion.
+
 
 \section{Requirements}
+
+The purpose of the requirements document is to outline the direction of this project within the requirements of the \textit{ECE411} practicum. All of the requirements weighted \textit{Must} need to be satisfied in order to qualify as a minimum viable product. Requirements weighted \textit{Should} specify desired features, which should be realized before the products' final release, but are not necessary for the minimum function.
 
     \subsection{Functional Requirements}
         \begin{centering}
@@ -23,12 +32,16 @@
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        2.1	& Provide USB spec power (4.40-5.25V, 500mA)	& Should & Meeting this spec would guarantee it would work on most mobile devices \\ \hline
+        2.1	& Provide USB spec power (4.75-5.25V, 500mA) \cite{USB20}	& Should & Meeting this spec would guarantee it would work on most mobile devices \\ \hline
         2.2	& Can fit charging unit into a backpack (300mm x 300mm x 150mm)	& Should & Meeting these dimensions would qualify the charging unit as portable \\ \hline
         2.3	& Receiver is smaller or equal to 138mm x 67mm	& Should & This is the dimension of the iPhone 7, meeting this footprint would make it compatible with more devices \\ \hline
         \end{tabular}
         \end{centering}
     
+\newpage
+\rhead{ \fancyplain{}{Requirements} }  %here as a hack to fix formatting
+
+
     \subsection{Economic Requirements}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
@@ -37,13 +50,14 @@
         3.2 & Product components not to exceed \$20 ea for quantity 1000 & Should & We are not paying our engineers, or technicians, If we sell the product for \$20+S\&H we \textit{might} turn a profit \\ \hline
         \end{tabular}
         \end{centering}    
+        
 
     \subsection{Health and Safety Requirements}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
         4.1	& Shut off if base draws excessive current (current rating of Tx coil wire)	& Must &This will serve as short circuit protection, which could lead to damage of product, and/or fire \\ \hline
-        4.2	& Shut off if the base unit overheats \mbox{(exceeds $35^{\circ}C$)}& Should & $35^{\circ}C$ is the maximum operating temperature of the iPhone \\ \hline
+        4.2	& Shut off if the base unit overheats \mbox{(exceeds $35^{\circ}C$)} \cite{appletemp} & Should & $35^{\circ}C$ is the maximum operating temperature of the iPhone \\ \hline
         \end{tabular}
         \end{centering}
     
@@ -56,11 +70,12 @@
         \end{tabular}
         \end{centering}
     
+    
     \subsection{Environmental Requirements}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        7.1	& Charging unit compliant with IP22	& Should & Users may spill liquids on the base unit, but as most mobile devices are not water resistant the receive units will not carry this rating \\ \hline
+        7.1	& Charging unit compliant with IP22	\cite{iprating} & Should & Users may spill liquids on the base unit, but as most mobile devices are not water resistant the receive units will not carry this rating \\ \hline
         \end{tabular}
         \end{centering}
     

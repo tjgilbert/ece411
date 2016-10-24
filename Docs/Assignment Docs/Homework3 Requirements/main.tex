@@ -29,7 +29,7 @@
 %\chead{ \fancyplain{}{} }
 %\rhead{ \fancyplain{}{} }
 %\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
-\fancyfoot[R] {\thepage}
+\fancyfoot[R] {\thepage}     %use this instead
 \thispagestyle{plain}
 
 %%%%%%%%%%%% LISTING %%%
@@ -86,6 +86,8 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 
 
 
+\fancyfoot[L]{\small{\textit{Revision 1.1}}} %revision number here starting on TOC
+
 \begin{document}
 
 \pagenumbering{Roman} %roman numerals for title.. TOC.. list of figures/tables..
@@ -94,6 +96,7 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 \fancyfoot[R] {page \thepage\ of \pageref*{LastPage} }  
 
 \input{1_intro.tex}   
+\input{ref.tex}
 
 \end{document}
 	

@@ -1,0 +1,100 @@
+%\documentclass[draft, 11pt, a4paper]{article}  %compiles faster for editing
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{epigraph}
+
+\newcommand{\hilight}[1]{\colorbox{BurntOrange}{#1}}  % changes will be highlighted in BurntOrange
+
+% Set links, etc. to different colors
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[bookmarksopen, backref,colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Product Design Specifications} }
+%\chead{ \fancyplain{}{} }
+%\rhead{ \fancyplain{}{} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[R] {\thepage}
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+
+%%% My packages:
+\usepackage{graphicx} %package to manage images
+\graphicspath{ {images/} }  %set default image path
+\usepackage{chngcntr}
+\usepackage{float}       % useful for positioning figures / etc.
+\counterwithin{table}{section}      % counts fig 1.1... 1.2... etc
+\counterwithin{figure}{section}     % same for figures.. for List of Figures page
+
+% for highlighting text
+\usepackage{soul}
+\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }  %Not sure why I set it to yellow.. maybe used for something else besides changes
+\usepackage[export]{adjustbox} %for left/right aligned stuff
+\usepackage{array} % for centering things in tables
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} %SAME AS ABOVE
+
+\lstset{
+%language=bash,                          % Code language
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter                                   %fix for figure names and numbers overlapping
+\def\l@figure{\@dottedtocline{1}{1.5em}{4.5em}}   % in the List Of Figures
+\makeatother
+
+
+
+\begin{document}
+
+\pagenumbering{Roman} %roman numerals for title.. TOC.. list of figures/tables..
+\input{title_toc.tex}
+\pagenumbering{arabic}   %  Then switch to arabic page numbering at 1. 
+\fancyfoot[R] {page \thepage\ of \pageref*{LastPage} }  
+
+\input{1_intro.tex}   
+
+\end{document}
+	
+	

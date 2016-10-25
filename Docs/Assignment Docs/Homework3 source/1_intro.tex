@@ -5,90 +5,146 @@
 \rhead{ \fancyplain{}{Introduction/Requirements} }
 
     \subsection{Objective}
-    This project will address a desire for wireless charging unit for a mobile phone or similar device. The charging unit will be portable and intuitive to use \textit{(portable and intuitive are defined further in the Requirements section)}. The basic use of the product requires the user to place their device on the charging unit pad. There will be no user inputs other than placing their device on the charging station.
-
+    
+     Create a portable and intuitive to use wireless charger for a mobile device \textit{(portable and intuitive are defined further in the Requirements section)}. The use of the product requires the user only to place their device on the charging station and their device will begin charging.
+    
     \subsection{Needs Statement}
-     The need for this technology is sufficed by the convenient enhancements upon wired chargers. Wireless chargers are more convenient, because they negate the requirement of plugging and unplugging your device. The technology can also help people with physical impairments that are unable to manipulate traditional charging cords.
-     Wireless charging technology is also inherently more robust than a physical connector. Charging cords and receptacles can wear out or be damaged by careless insertion.
+     The need for this technology is sufficed by the convenient enhancements upon wired chargers. Wireless chargers negate the need to plug and unplug the device. The technology can also help people with physical impairments that are unable to manipulate traditional charging cords.
+     Wireless charging technology is also inherently more robust than a physical connector. Charging cords wear out and receptacles can be damaged by careless insertion.
 
 
 \section{Requirements}
 
-The purpose of the requirements document is to outline the direction of this project within the requirements of the \textit{ECE411} practicum. All of the requirements weighted \textit{Must} need to be satisfied in order to qualify as a minimum viable product. Requirements weighted \textit{Should} specify desired features, which should be realized before the products' final release, but are not necessary for the minimum function.
+The purpose of the requirements document is to outline the direction of this project within the requirements of the \textit{ECE411} practicum. All of the requirements weighted \textit{Must} need to be satisfied in order to qualify as a minimum viable product. Requirements weighted \textit{Should} specify desired features, which should be realized before the products' final release, but are not necessary for the minimum function. \textit{May} requirements are convieniene features. Their inclusion is at the pleasure of the \textit{Must} and \textit{Should} requirements
 
-    \subsection{Functional Requirements}
+    \subsection{Functional}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        1.1	& Have one or more sensors and actuators & Must	& Course requirement \\ \hline
-        1.2	& Have a digital or analog processor & Must	& Course requirement \\ \hline
-        1.3	& Wirelessly charge a USB device & Must	& This is the premise of the project, this is it's sole purpose \\ \hline
+        1.1	& Wirelessly charge a USB device & Must	& This is the premise of the project, this is its sole purpose \\ \hline
+        1.2	& Have one or more sensors and actuators & Must	& Course requirement \\ \hline
+        1.3	& Have a digital or analog processor & Must	& Course requirement \\ \hline
         1.4	& Turn on transmitter when device to be charged is placed in range	& Should & This will save energy because the product will not transmit energy if no device is present \\ \hline
         1.5 & Turn off transmitter when device is removed	& Should & Same as 1.4 \\ \hline
         \end{tabular}
         \end{centering}
-    
-    \subsection{Performance Requirements}
+        
+    \subsection{Performance}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        2.1	& Provide USB spec power (4.75-5.25V, 500mA) \cite{USB20}	& Should & Meeting this spec would guarantee it would work on most mobile devices \\ \hline
-        2.2	& Can fit charging unit into a backpack (300mm x 300mm x 150mm)	& Should & Meeting these dimensions would qualify the charging unit as portable \\ \hline
-        2.3	& Receiver is smaller or equal to 138mm x 67mm	& Should & This is the dimension of the iPhone 7, meeting this footprint would make it compatible with more devices \\ \hline
+        2.1	& Provide USB spec power (4.75-5.25V, 500mA) \cite{USB20}to the receiving device& Should & Meeting this spec would guarantee it would work on most mobile devices \\ \hline
         \end{tabular}
         \end{centering}
     
 \newpage
 \rhead{ \fancyplain{}{Requirements} }  %here as a hack to fix formatting
 
-
-    \subsection{Economic Requirements}
+    \subsection{Economic}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
         3.1 & Prototypes not to exceed \$75 each & Should & We are not made of money  \\ \hline
-        3.2 & Product components not to exceed \$20 ea for quantity 1000 & Should & We are not paying our engineers, or technicians, If we sell the product for \$20+S\&H we \textit{might} turn a profit \\ \hline
+        3.2 & Product not to exceed \$20 in components each for quantity 1000 & Should & We are not paying our engineers, or technicians, If we sell the product for \$20+S\&H we \textit{might} turn a profit \\ \hline
         \end{tabular}
         \end{centering}    
-        
-
-    \subsection{Health and Safety Requirements}
+  
+    \subsection{Power }
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        4.1	& Shut off if base draws excessive current (current rating of Tx coil wire)	& Must &This will serve as short circuit protection, which could lead to damage of product, and/or fire \\ \hline
-        4.2	& Shut off if the base unit overheats \mbox{(exceeds $35^{\circ}C$)} \cite{appletemp} & Should & $35^{\circ}C$ is the maximum operating temperature of the iPhone \\ \hline
+        4.1	& Charging unit will be powered by a 12VDC supply &	Should & If supplied by 12VDC, product can be adapted for automotive use \\ \hline
         \end{tabular}
         \end{centering}
-    
-    \subsection{Legal Requirements}
+
+    \subsection{Health and Safety }
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        6.1	& Code and hardware design will be open source or generated by us& Must	&To preserve our academic honesty and integrity \\ \hline
+        5.1	& Shut off if base draws excessive current (current rating of Tx coil wire)	& Must &This will serve as short circuit protection, which could lead to damage of product, and/or fire \\ \hline
+        5.2	& Shut off if the base unit overheats \mbox{(exceeds $35^{\circ}C$)}  & Must & $35^{\circ}C$ is the maximum operating temperature of the iPhone \cite{appletemp} \\ \hline
+        \end{tabular}
+        \end{centering}
+
+    \subsection{Legal}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        6.1	& Code and hardware design will be made by us & Must	& To preserve our academic honesty and integrity \\ \hline
         6.2	& Any borrowed or modified code/designs will be credited according to the applicable license & Must	&It's the right thing to do\\ \hline
         \end{tabular}
         \end{centering}
     
-    
-    \subsection{Environmental Requirements}
+    \subsection{Environmental }
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        7.1	& Charging unit compliant with IP22	\cite{iprating} & Should & Users may spill liquids on the base unit, but as most mobile devices are not water resistant the receive units will not carry this rating \\ \hline
+        7.1	& Charging unit compliant with IP22	\cite{iprating} & Should & Users may spill liquids on the base unit, but as most mobile devices are generally not water resistant, the receive units will not carry this rating \\ \hline
         \end{tabular}
         \end{centering}
-    
-    
-    \subsection{Usability Requirements}
+
+    \subsection{Maintainability}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        8.1 & Transmitter board to be screw removable from enclosure & Should & Removable parts will ease debugging and repair \\ \hline
+        \end{tabular}
+        \end{centering}
+
+    \subsection{Manufacturability}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        9.1 & Device will use no BGA, QFN or SMD parts smaller than 0604 & Should & Course requirement and for small runs the PCBs need to be easily assembled by hand \\ \hline    
+        \end{tabular}
+        \end{centering}
+
+    \subsection{Physical}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        10.2 & Can fit charging unit into a backpack (300mm x 300mm x 150mm)	& Should & Meeting these dimensions would qualify the charging unit as portable \\ \hline
+        10.3 & Receiver is smaller or equal to 138mm x 67mm	& Should & This is the dimension of the iPhone 7, meeting this footprint would make it compatible with more devices \\ \hline    
+        \end{tabular}
+        \end{centering}
+        
+ 
+        
+    \subsection{Social \& cultural}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        11.1 & Have a hip enclosure design, to be judged as hip by at least 4 non-engineering majors & May & A good looking charger will differentiate it among other wireless charging solutions \\ \hline
+        \end{tabular}
+        \end{centering}
+             
+    \subsection{Political}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        12.1 & Comply with FCC rules on radiating devices & May & Radiating devices sold in the United States must pass FCC rules for permitted emissions \\ \hline
+        \end{tabular}
+        \end{centering}
+             
+    \subsection{Usability }
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|}        \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        8.1 & Orientation/location for device placement on charging unit is marked & Should & Marking the location for optimal charging will reduce the time to full charge\\ \hline
-        8.2 & User able set up within 5 minutes without user manual by a college student & Should & This is a metric to decide if the device is user friendly \\ \hline
-        8.3 & Base station will indicate when device is coupled/charging & Should & User feedback will increase confidence that the product is operating correctly                                \\ \hline
-        8.4 & Base station will indicate when device is done charging & May& Further user feedback on charge state would would be a more obvious indication than having to check the phone \\ \hline
+        13.1 & Orientation/location for device placement on charging unit is marked & Should & Marking the location for optimal charging will reduce the time to full charge\\ \hline
+        13.2 & User able set up within 5 minutes without user manual by a college student & Should & This is a metric to decide if the device is user friendly \\ \hline
+        13.3 & Base station will indicate when device is coupled/charging & Should & User feedback will increase confidence that the product is operating correctly                                \\ \hline
+        13.4 & Base station will indicate when device is done charging & May& Further user feedback on charge state would would be a more obvious indication than having to check the phone \\ \hline
         \end{tabular}
         \end{centering}
+        
+    \subsection{Documentation}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline        
+        14.1 & Graphic Instruction Card & Must & A pictorial style instruction card removes need for translation and eases internationalization  \\ \hline      
+        14.2 & Magnetic Field Warning Sticker & Should & Magnetic fields produced by device could damage information held on magnetic media like cassettes and cards  \\ \hline     
+        \end{tabular}
+        \end{centering}
+        
 
 \newpage

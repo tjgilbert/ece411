@@ -15,7 +15,7 @@
 
 \section{Requirements}
 
-The purpose of the requirements document is to outline the direction of this project within the requirements of the \textit{ECE411} practicum. All of the requirements weighted \textit{Must} need to be satisfied in order to qualify as a minimum viable product. Requirements weighted \textit{Should} specify desired features, which should be realized before the products' final release, but are not necessary for the minimum function. \textit{May} requirements are convieniene features. Their inclusion is at the pleasure of the \textit{Must} and \textit{Should} requirements
+The purpose of the requirements document is to outline the direction of this project within the requirements of the \textit{ECE411} practicum. All of the requirements weighted \textit{Must} need to be satisfied in order to qualify as a minimum viable product. Requirements weighted \textit{Should} specify desired features, which should be realized before the products' final release, but are not necessary for the minimum function. \textit{May} requirements are convenience features. Their inclusion is at the pleasure of the \textit{Must} and \textit{Should} requirements
 
     \subsection{Functional}
         \begin{centering}
@@ -36,11 +36,8 @@ The purpose of the requirements document is to outline the direction of this pro
         2.1	& Provide USB spec power (4.75-5.25V, 500mA) \cite{USB20}to the receiving device& Should & Meeting this spec would guarantee it would work on most mobile devices \\ \hline
         \end{tabular}
         \end{centering}
-    
-\newpage
-\rhead{ \fancyplain{}{Requirements} }  %here as a hack to fix formatting
-
-    \subsection{Economic}
+        
+            \subsection{Economic}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
@@ -48,6 +45,11 @@ The purpose of the requirements document is to outline the direction of this pro
         3.2 & Product not to exceed \$20 in components each for quantity 1000 & Should & We are not paying our engineers, or technicians, If we sell the product for \$20+S\&H we \textit{might} turn a profit \\ \hline
         \end{tabular}
         \end{centering}    
+    
+\newpage
+\rhead{ \fancyplain{}{Requirements} }  %here as a hack to fix formatting
+
+
   
     \subsection{Power }
         \begin{centering}
@@ -108,13 +110,20 @@ The purpose of the requirements document is to outline the direction of this pro
         \end{tabular}
         \end{centering}
         
+        \subsection{Reliability \& Availability}
+        \begin{centering}
+        \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
+        \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
+        11.1 & MTTF of $>2$ years & Should & About half of smartphone users upgrade every two years \cite{forbes} \\ \hline
+        \end{tabular}
+        \end{centering}
  
         
     \subsection{Social \& cultural}
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        11.1 & Have a hip enclosure design, to be judged as hip by at least 4 non-engineering majors & May & A good looking charger will differentiate it among other wireless charging solutions \\ \hline
+        12.1 & Have a hip enclosure design, to be judged as hip by at least 4 non-engineering majors & May & A good looking charger will differentiate it among other wireless charging solutions \\ \hline
         \end{tabular}
         \end{centering}
              
@@ -122,7 +131,7 @@ The purpose of the requirements document is to outline the direction of this pro
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        12.1 & Comply with FCC rules on radiating devices & May & Radiating devices sold in the United States must pass FCC rules for permitted emissions \\ \hline
+        13.1 & Comply with FCC rules on radiating devices & May & Radiating devices sold in the United States must pass FCC rules for permitted emissions \\ \hline
         \end{tabular}
         \end{centering}
              
@@ -130,10 +139,10 @@ The purpose of the requirements document is to outline the direction of this pro
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|}        \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline
-        13.1 & Orientation/location for device placement on charging unit is marked & Should & Marking the location for optimal charging will reduce the time to full charge\\ \hline
-        13.2 & User able set up within 5 minutes without user manual by a college student & Should & This is a metric to decide if the device is user friendly \\ \hline
-        13.3 & Base station will indicate when device is coupled/charging & Should & User feedback will increase confidence that the product is operating correctly                                \\ \hline
-        13.4 & Base station will indicate when device is done charging & May& Further user feedback on charge state would would be a more obvious indication than having to check the phone \\ \hline
+        14.1 & Orientation/location for device placement on charging unit is marked & Should & Marking the location for optimal charging will reduce the time to full charge\\ \hline
+        14.2 & User able set up within 5 minutes without user manual by a college student & Should & This is a metric to decide if the device is user friendly \\ \hline
+        14.3 & Base station will indicate when device is coupled/charging & Should & User feedback will increase confidence that the product is operating correctly                                \\ \hline
+        14.4 & Base station will indicate when device is done charging & May& Further user feedback on charge state would would be a more obvious indication than having to check the phone \\ \hline
         \end{tabular}
         \end{centering}
         
@@ -141,8 +150,8 @@ The purpose of the requirements document is to outline the direction of this pro
         \begin{centering}
         \begin{tabular}{|l|m{7cm}|l|m{7cm}|} \hline
         \textit{\textbf{Req\#}}	& \textit{\textbf{Requirement}} &\textit{\textbf{Weight}}&\textit{\textbf{Justification}} \\ \hline        
-        14.1 & Graphic Instruction Card & Must & A pictorial style instruction card removes need for translation and eases internationalization  \\ \hline      
-        14.2 & Magnetic Field Warning Sticker & Should & Magnetic fields produced by device could damage information held on magnetic media like cassettes and cards  \\ \hline     
+        15.1 & Graphic Instruction Card & Must & A pictorial style instruction card removes need for translation and eases internationalization  \\ \hline      
+        15.2 & Magnetic Field Warning Sticker & Should & Magnetic fields produced by device could damage information held on magnetic media like cassettes and cards  \\ \hline     
         \end{tabular}
         \end{centering}
         

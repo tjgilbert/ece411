@@ -1,3 +1,8 @@
+Note: The ATtiny85 is only programmable ONCE over ISP programming because the RESTORE pin is changed to an output 
+and the fuse value changed to 0 in the final stage of programming the first time. In order to restore the fuse value 
+in order to reprogram either need to program with HVSP or restore the fuse value as enumerated here:
+http://pe0fko.nl/Fuse-restore/
+
 ATTiny85 Data Sheet:
 http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf
 

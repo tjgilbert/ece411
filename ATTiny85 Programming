@@ -2,6 +2,7 @@ Note: The ATtiny85 is only programmable ONCE over ISP programming because the RE
 and the fuse value changed to 0 in the final stage of programming the first time. In order to restore the fuse value 
 in order to reprogram either need to program with HVSP or restore the fuse value as enumerated here:
 http://pe0fko.nl/Fuse-restore/
+(the USBTiny programmer from sparkfun that Tyler got takes care of this fuse issue)
 
 ATTiny85 Data Sheet:
 http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf
@@ -18,4 +19,23 @@ AVR Dragon User Guide:
 http://www.atmel.com/Images/Atmel-42723-AVR-Dragon_UserGuide.pdf
 
 Basic Tutorial for programming ATtiny45/85:
+http://pe0fko.nl/g8voi/g8voi_guide_V1.2/
+
+other useful links for research:
+AVRDUDE:
+http://www.nongnu.org/avrdude/
+
+Using USBTiny (sparkfun ISP programmer):
+http://www.crash-bang.com/using-usbtiny-with-atmelstudio/
+
+simple AVR programmers:
+http://elm-chan.org/works/avrx/report_e.html
+
+Getting started tutorial (maybe too basic and certain aspects we can overlook by having prebuilt modules):
+http://metku.net/index.html?path=articles/microcontroller-part-1/index_eng
+
+fuse restore(cumbersome and unnecessary):
+http://pe0fko.nl/Fuse-restore/
+
+Beginners Guide- talks about HVSP and ISP:
 http://pe0fko.nl/g8voi/g8voi_guide_V1.2/

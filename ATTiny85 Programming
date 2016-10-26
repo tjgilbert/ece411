@@ -3,5 +3,11 @@ http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny
 
 EEPROM writing proceedure: pg. 22
 
+PWM modification of PLL clock for clock source/, timer/counter: pg. 24
+
+Temperature Sensor on chip: pg.133
+
+Interrupts: pg. 48
+
 AVR Dragon User Guide:
 http://www.atmel.com/Images/Atmel-42723-AVR-Dragon_UserGuide.pdf

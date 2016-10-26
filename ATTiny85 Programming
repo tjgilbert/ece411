@@ -1,8 +1,9 @@
-Note: The ATtiny85 is only programmable ONCE over ISP programming because the RESTORE pin is changed to an output 
-and the fuse value changed to 0 in the final stage of programming the first time. In order to restore the fuse value 
-in order to reprogram either need to program with HVSP or restore the fuse value as enumerated here:
-http://pe0fko.nl/Fuse-restore/
-(the USBTiny programmer from sparkfun that Tyler got takes care of this fuse issue)
+The following is not correct. This only applies if you want to use RST as an IO, which we arent doing since we are using a package with more pins IO (ATTINY44 = 14SOIC) -tg
+//Note: The ATtiny85 is only programmable ONCE over ISP programming because the RESTORE pin is changed to an output 
+//and the fuse value changed to 0 in the final stage of programming the first time. In order to restore the fuse value 
+//in order to reprogram either need to program with HVSP or restore the fuse value as enumerated here:
+//http://pe0fko.nl/Fuse-restore/
+//(the USBTiny programmer from sparkfun that Tyler got takes care of this fuse issue)
 
 ATTiny85 Data Sheet:
 http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf

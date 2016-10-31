@@ -40,3 +40,11 @@ http://pe0fko.nl/Fuse-restore/
 
 Beginners Guide- talks about HVSP and ISP:
 http://pe0fko.nl/g8voi/g8voi_guide_V1.2/
+
+Library for ATTiny44 slave:
+https://github.com/svoisen/TinyWire
+http://forum.arduino.cc/index.php/topic,8869.0.html#268
+
+Library for ATTiny85 master:
+https://code.google.com/archive/p/arduino-tiny/wikis/TWIMasterLibrary.wiki
+

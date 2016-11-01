@@ -49,3 +49,5 @@ http://forum.arduino.cc/index.php/topic,8869.0.html#268
 Library for ATTiny85 master:
 https://code.google.com/archive/p/arduino-tiny/wikis/TWIMasterLibrary.wiki
 
+programming ATTinys with Arduino ISP without a bootloader:
+http://www.instructables.com/id/Turn-Your-Arduino-Into-an-ISP/step3/Using-Your-Arduino-ISP-Programming-AVRs-Without-Bo/

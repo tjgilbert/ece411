@@ -4,6 +4,7 @@ The following is not correct. This only applies if you want to use RST as an IO,
 //in order to reprogram either need to program with HVSP or restore the fuse value as enumerated here:
 //http://pe0fko.nl/Fuse-restore/
 //(the USBTiny programmer from sparkfun that Tyler got takes care of this fuse issue)
+-oh ok thank you Tyler, I was confusing myself there
 
 ATTiny85 Data Sheet:
 http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf

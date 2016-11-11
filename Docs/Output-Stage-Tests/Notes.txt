@@ -1,0 +1,57 @@
+
+For all 
+125 KHz
+V supply 12 V
+
+Adafruit coils @ 40 uH
+Litz Coils @ 19uH
+
+capture 1 : 
+DC Current 480 mA
+Load R = 10 Ohm
+Output Hi 2.2 V Lo 0 V
+
+
+Adafruit Coils
+4 0702 NMOS devices in parallel
+Rectifier hooked up wrong , no output cap
+
+Capture 2
+DC Current 480 mA
+Load R = 10 Ohm
+Output Hi 2.2 V Lo 0 V
+
+
+Adafruit Coils
+4 0702 NMOS devices in parallel
+
+
+Capture 3
+
+Same as above except taken pre-rectifier stage
+
+Capture 4 
+Output Hi 2.7 V Lo 0 V
+Homespun Litz Coils
+DC Current 800mA
+
+Capture 5
+
+Same as above except taken pre-rectifier stage
+
+Capture 6
+Same as 4 except DC I = 600mA, DC Hi = 2.2 V PreRectifier
+
+Capture 7
+Same as 4 except DC I = 600mA, DC Hi = 2.2 V AT load = 10 Ohm
+
+Capture 8
+Coil in parallel w/10 Ohms
+12*600mA = 7.2 Watts DC
+RMS 5V at rx coil  , V^2 / R = 2.5 Watts
+
+
+
+
+
+

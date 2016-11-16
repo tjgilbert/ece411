@@ -144,7 +144,8 @@
 <wire x1="40.564" y1="36.576" x2="40.564" y2="80" width="0" layer="20"/>
 <wire x1="40.564" y1="80" x2="-0.254" y2="80" width="0" layer="20"/>
 <wire x1="-0.254" y1="80" x2="-0.254" y2="36.576" width="0" layer="20"/>
-<text x="36.83" y="41.91" size="1.27" layer="1" rot="R90">T10-tjg-2016</text>
+<text x="36.83" y="41.91" size="1.27" layer="25" rot="R90">T10-tjg-2016</text>
+<text x="35.56" y="41.91" size="1.27" layer="26" rot="R90">I love lamp</text>
 </plain>
 <libraries>
 <library name="adafruit">

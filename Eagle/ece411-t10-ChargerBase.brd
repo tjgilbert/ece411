@@ -1793,26 +1793,26 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library="rcl" package="C0805" value="100n" x="21.59" y="62.23" rot="R90"/>
 <element name="IC2" library="avr-5" package="SOIC14" value="TINY24/44/84-SSU" x="27.94" y="62.23"/>
 <element name="ISP1" library="adafruit" package="AVRISP" value="AVRISP-6" x="15.24" y="59.69" rot="R180"/>
-<element name="LED10" library="led" package="CHIPLED_0805" value="" x="36.703" y="77.089" rot="R90"/>
-<element name="LED2" library="led" package="CHIPLED_0805" value="" x="1.27" y="77.47" smashed="yes" rot="R180">
+<element name="LED10" library="led" package="CHIPLED_0805" value="green" x="36.703" y="77.089" rot="R90"/>
+<element name="LED2" library="led" package="CHIPLED_0805" value="red" x="1.27" y="77.47" smashed="yes" rot="R180">
 <attribute name="NAME" x="0.508" y="75.184" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-1.27" y="78.74" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED3" library="led" package="CHIPLED_0805" value="" x="1.016" y="38.862" smashed="yes" rot="R180">
+<element name="LED3" library="led" package="CHIPLED_0805" value="red" x="1.016" y="38.862" smashed="yes" rot="R180">
 <attribute name="NAME" x="0.254" y="45.466" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-1.524" y="40.132" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED4" library="led" package="CHIPLED_0805" value="" x="38.1" y="38.1" smashed="yes" rot="R270">
+<element name="LED4" library="led" package="CHIPLED_0805" value="red" x="38.1" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.004" y="37.084" size="1.27" layer="25"/>
 <attribute name="VALUE" x="36.83" y="35.56" size="1.27" layer="27"/>
 </element>
-<element name="LED5" library="led" package="CHIPLED_0805" value="" x="38.1" y="78.74" rot="R90"/>
-<element name="LED7" library="led" package="CHIPLED_0805" value="" x="3.81" y="77.47" rot="R180"/>
-<element name="LED8" library="led" package="CHIPLED_0805" value="" x="2.54" y="41.148" smashed="yes" rot="R180">
+<element name="LED5" library="led" package="CHIPLED_0805" value="red" x="38.1" y="78.74" rot="R90"/>
+<element name="LED7" library="led" package="CHIPLED_0805" value="green" x="3.81" y="77.47" rot="R180"/>
+<element name="LED8" library="led" package="CHIPLED_0805" value="green" x="2.54" y="41.148" smashed="yes" rot="R180">
 <attribute name="NAME" x="1.778" y="47.498" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="0" y="42.418" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED9" library="led" package="CHIPLED_0805" value="" x="36.83" y="40.132" smashed="yes" rot="R270">
+<element name="LED9" library="led" package="CHIPLED_0805" value="green" x="36.83" y="40.132" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.878" y="39.37" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="35.56" y="37.592" size="1.27" layer="27"/>
 </element>
@@ -1849,8 +1849,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="20.32" y="46.99" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U$1" library="_VMS" package="LITTLEFUSE" value="LITTLEFUSE" x="3.81" y="66.04" rot="R270"/>
-<element name="C11" library="adafruit" package="E2-5" value="" x="8.89" y="62.23"/>
-<element name="C10" library="adafruit" package="E2-5" value="" x="21.59" y="74.93"/>
+<element name="C11" library="adafruit" package="E2-5" value="10u" x="8.89" y="62.23"/>
+<element name="C10" library="adafruit" package="E2-5" value="10u" x="21.59" y="74.93"/>
 <element name="IC5" library="_VMS" package="SOT223" value="AZ1117IH-5.0V" x="27.94" y="74.93"/>
 <element name="Q1-NP" library="transistor-fet" package="TO-92" value="NP" x="26.67" y="52.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="23.495" y="51.435" size="1.27" layer="25" ratio="10" rot="R180"/>
@@ -2017,15 +2017,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.16" y1="58.166" x2="8.448" y2="58.166" width="0.6096" layer="1"/>
 <wire x1="8.448" y1="58.166" x2="8.382" y2="58.1" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$3">
-<contactref element="IC2" pad="2"/>
-</signal>
-<signal name="N$4">
-<contactref element="IC2" pad="3"/>
-</signal>
-<signal name="N$5">
-<contactref element="IC2" pad="5"/>
-</signal>
 <signal name="PWM">
 <contactref element="Q3-NP" pad="2"/>
 <contactref element="Q1-NP" pad="2"/>
@@ -2074,9 +2065,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.02" y1="68.58" x2="26.67" y2="68.58" width="0.6096" layer="16"/>
 <via x="26.67" y="68.58" extent="1-16" drill="0.6"/>
 <wire x1="26.67" y1="68.58" x2="26.67" y2="64.8335" width="0.6096" layer="1"/>
-</signal>
-<signal name="PIN13">
-<contactref element="IC2" pad="13"/>
 </signal>
 <signal name="VDD">
 <contactref element="U$1" pad="2"/>
@@ -2284,59 +2272,89 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="11,1,905dd842c9c881d7"/>
+<approved hash="18,29,957e6705a70c5577"/>
+<approved hash="18,29,e8bf6eec3ae5bcb6"/>
 <approved hash="18,29,957e1d14651ded77"/>
-<approved hash="18,29,b36b0367c367736b"/>
 <approved hash="18,29,a5240c1cf41c5d24"/>
+<approved hash="18,29,b36b0367c367736b"/>
 <approved hash="18,29,9578e3b523ba5577"/>
+<approved hash="18,29,688733b4f3b9a88a"/>
+<approved hash="18,29,d86f747bfe765262"/>
+<approved hash="18,29,a1745d203f0d315c"/>
 <approved hash="18,29,95210608fe0e6d27"/>
-<approved hash="18,29,695ae367c361495c"/>
 <approved hash="18,29,836e0924c9224368"/>
+<approved hash="18,29,695ae367c361495c"/>
 <approved hash="18,29,25eaf61141f9a5ee"/>
+<approved hash="18,29,d1c60bbf0fc231d9"/>
+<approved hash="18,29,d59e09f70f083767"/>
+<approved hash="18,29,28996d416f772aaf"/>
+<approved hash="18,29,2ef36b2b6dcb2813"/>
+<approved hash="18,29,e3ff0b19f5011007"/>
+<approved hash="18,29,d4ee3eb7b4e540fc"/>
+<approved hash="18,29,df6408b2f6ba236c"/>
+<approved hash="18,29,d36e324085b2477c"/>
+<approved hash="18,29,f19a11e4efd40d92"/>
+<approved hash="18,29,dee227eea65c48f8"/>
+<approved hash="18,29,2c16d29a28b3320d"/>
+<approved hash="18,29,33f29f2a99cf3517"/>
+<approved hash="18,29,fa1537cd2a23e7fb"/>
+<approved hash="18,29,6de8a7eb7541a682"/>
 <approved hash="18,29,b3453c9bc2ed4d33"/>
-<approved hash="18,29,dec70069c43a64b3"/>
 <approved hash="18,29,54908232c9db0c85"/>
+<approved hash="18,29,dec70069c43a64b3"/>
+<approved hash="18,29,66587a380b817be2"/>
+<approved hash="18,29,78da4c0e06060c2c"/>
 <approved hash="18,29,0a7732cbd9bf9b04"/>
+<approved hash="18,29,cba2c00f3e7555c6"/>
+<approved hash="18,29,4fd4540ebe7595bc"/>
+<approved hash="18,29,eafc352437aee876"/>
 <approved hash="18,29,1595f41e5c7625bf"/>
+<approved hash="18,29,2ff915d51098301a"/>
+<approved hash="18,29,5bf8abd4a80abb86"/>
 <approved hash="18,29,c9af5099da9843ae"/>
 <approved hash="18,29,e1e28c288731921e"/>
 <approved hash="18,29,9de2c604523c8925"/>
 <approved hash="18,29,58e1fefc18f1b2ef"/>
 <approved hash="18,29,a1cd47d331fecbdc"/>
-<approved hash="18,29,e0eb169b825c3bd5"/>
-<approved hash="18,29,efb2adb0bf8bed8d"/>
-<approved hash="18,29,5bd8ad80725c3de6"/>
+<approved hash="18,29,f04b04bfa9765a62"/>
+<approved hash="18,29,320adfe8160cdff7"/>
+<approved hash="18,29,6297013633416700"/>
+<approved hash="18,29,cbe7354b0302f24c"/>
+<approved hash="18,29,6181704dacd70da5"/>
 <approved hash="18,29,f81d16b383dc228b"/>
 <approved hash="18,29,e016a214bd17ef11"/>
 <approved hash="18,29,432eada873dc24b8"/>
+<approved hash="18,29,e0eb169b825c3bd5"/>
+<approved hash="18,29,efb2adb0bf8bed8d"/>
+<approved hash="18,29,5bd8ad80725c3de6"/>
 <approved hash="18,29,f0cf50030fd1af01"/>
 <approved hash="18,29,bc2e5115fdb19075"/>
-<approved hash="18,29,1a92ea9b62e688f3"/>
 <approved hash="18,29,f66c1becbaaec427"/>
+<approved hash="18,29,1a92ea9b62e688f3"/>
 <approved hash="18,29,b631308f1a127444"/>
-<approved hash="18,29,8be79868b8458f00"/>
 <approved hash="18,29,74ea6764be2470a5"/>
-<approved hash="18,29,986fec08cd61f6fc"/>
+<approved hash="18,29,8be79868b8458f00"/>
 <approved hash="18,29,813dec28cd21efce"/>
+<approved hash="18,29,986fec08cd61f6fc"/>
 <approved hash="18,29,4e4507bfe4b10a0e"/>
 <approved hash="18,29,8230963396c296cb"/>
 <approved hash="18,29,510b01a21574e33c"/>
 <approved hash="18,29,9b6e8f6d8e308e3d"/>
 <approved hash="18,29,4a074c0cc5024304"/>
 <approved hash="18,29,bc7aba70c4a642a1"/>
-<approved hash="18,29,dbda9fde35d971dd"/>
 <approved hash="18,29,aab8e36123666abf"/>
-<approved hash="18,29,efb2adb0bf8bed8d"/>
-<approved hash="18,29,5bd849e6643e2e04"/>
+<approved hash="18,29,dbda9fde35d971dd"/>
 <approved hash="18,29,e016a214bd17ef11"/>
 <approved hash="18,29,432e513865be375a"/>
+<approved hash="18,29,efb2adb0bf8bed8d"/>
+<approved hash="18,29,5bd849e6643e2e04"/>
 <approved hash="18,29,832ae4a4640a82f9"/>
 <approved hash="18,29,f226858b738b0426"/>
-<approved hash="18,29,b42ad74c1f6241e6"/>
-<approved hash="18,29,1a0e570f1f216fc2"/>
 <approved hash="18,29,035c572f1f6176f0"/>
-<approved hash="18,29,5899fe7178b05a8d"/>
+<approved hash="18,29,1a0e570f1f216fc2"/>
+<approved hash="18,29,b42ad74c1f6241e6"/>
 <approved hash="18,29,a794017c87085cec"/>
+<approved hash="18,29,5899fe7178b05a8d"/>
 <approved hash="18,29,59414d424a3b4dc2"/>
 <approved hash="18,29,abc73125bb2621c4"/>
 <approved hash="18,29,e7490eab84ac6d4e"/>
@@ -2345,35 +2363,37 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,164c81c3f7c0604f"/>
 <approved hash="18,29,e061aa63a914e312"/>
 <approved hash="18,29,18270fc80b3f052b"/>
+<approved hash="18,29,69d9db5a2da39f20"/>
+<approved hash="18,29,b12d2266d465472e"/>
 <approved hash="18,29,61e50e8fc478ab12"/>
 <approved hash="18,29,8be7bc689c798f3c"/>
 <approved hash="18,29,74ea43649a187099"/>
 <approved hash="18,29,e60d28e022e5ec08"/>
-<approved hash="18,29,731abe1651216fd6"/>
 <approved hash="18,29,6a48be36516176e4"/>
 <approved hash="18,29,dd3e3e55516241f2"/>
+<approved hash="18,29,731abe1651216fd6"/>
 <approved hash="18,29,4254a6bd856840cd"/>
 <approved hash="18,29,4c29582844d944d2"/>
 <approved hash="18,29,557741765c2b5c24"/>
 <approved hash="18,29,a4d515d96925d829"/>
-<approved hash="18,29,250d7814afdb432a"/>
 <approved hash="18,29,e6ed4bb850f95daf"/>
 <approved hash="18,29,f2f4092c10adeb75"/>
 <approved hash="18,29,5d19af56df2e0379"/>
 <approved hash="18,29,b76448659e6c616d"/>
 <approved hash="18,29,0c6f036ed575da74"/>
+<approved hash="18,29,250d7814afdb432a"/>
 <approved hash="18,29,a0134bf6a037fa3a"/>
 <approved hash="18,29,88c38975c94cc8fa"/>
 <approved hash="18,29,43f45042104503f3"/>
 <approved hash="18,29,5dca0f1393dd31e2"/>
 <approved hash="18,29,f05bc68f708e465a"/>
-<approved hash="18,29,7f6cd016ac180362"/>
-<approved hash="18,29,36b99f43e3454abf"/>
 <approved hash="18,29,27274dc5fbc19123"/>
 <approved hash="18,29,1ba18043364fadad"/>
 <approved hash="18,29,4e2bf4c942d5f837"/>
 <approved hash="18,29,82b42756915334b1"/>
 <approved hash="18,29,f13e1bdcadd9473b"/>
+<approved hash="18,29,7f6cd016ac180362"/>
+<approved hash="18,29,36b99f43e3454abf"/>
 <approved hash="18,29,0b4281b0a37a097c"/>
 <approved hash="18,29,2d313f0f363e2eed"/>
 <approved hash="18,29,04e68e14a1e60be0"/>
@@ -2386,15 +2406,16 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,146591dcdbdf5e66"/>
 <approved hash="18,29,cce7211f37210f2b"/>
 <approved hash="18,29,d5b5213f37611619"/>
-<approved hash="18,29,38899e6098a03a9d"/>
-<approved hash="18,29,c784616d67183cfc"/>
 <approved hash="18,29,c1b2383db2304bbf"/>
+<approved hash="18,29,c784616d67183cfc"/>
+<approved hash="18,29,38899e6098a03a9d"/>
 <approved hash="18,29,bcae1e89948a36ad"/>
 <approved hash="18,29,1ea49e89948814a5"/>
 <approved hash="18,29,0da51fd169d67ba2"/>
 <approved hash="18,29,cf0b82cc48cb050c"/>
 <approved hash="18,29,8b9f5a25a620779a"/>
 <approved hash="18,29,f81566af9aaa0410"/>
+<approved hash="18,29,c5ef39373f4dc395"/>
 <approved hash="18,29,34fd64a1bf4f8f49"/>
 <approved hash="18,29,fbc8b1e388c2181b"/>
 <approved hash="18,29,0afe47604d6600f8"/>
@@ -2403,9 +2424,14 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,88c3864f30763efa"/>
 <approved hash="18,29,43f45f78e97ff5f3"/>
 <approved hash="18,29,dac8241ec4e30ad3"/>
+<approved hash="18,29,3eb2fe88888348b9"/>
+<approved hash="18,29,c6e6b6ab76a206ef"/>
 <approved hash="18,29,45c664affdfe6769"/>
 <approved hash="18,29,88ad0d604d7bc8b6"/>
 <approved hash="18,29,4fb2cc7f8c710fbc"/>
+<approved hash="18,29,f8177d5abd53381e"/>
+<approved hash="18,29,bb1d3a50fa297b64"/>
+<approved hash="18,29,94e8d2db12dd54ee"/>
 </errors>
 </board>
 </drawing>

@@ -6090,6 +6090,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="76.2" y="101.6" size="2.54" layer="97" rot="R180">To Coil. ~20uH</text>
+<wire x1="83.82" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="97"/>
+<wire x1="66.04" y1="104.14" x2="66.04" y2="106.68" width="0.1524" layer="97" curve="-180"/>
+<wire x1="66.04" y1="101.6" x2="66.04" y2="104.14" width="0.1524" layer="97" curve="-180"/>
+<wire x1="66.04" y1="99.06" x2="66.04" y2="101.6" width="0.1524" layer="97" curve="-180"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="99.06" width="0.1524" layer="97" curve="-180"/>
+<wire x1="66.04" y1="93.98" x2="66.04" y2="96.52" width="0.1524" layer="97" curve="-180"/>
+<wire x1="66.04" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="97"/>
+<text x="205.74" y="114.3" size="2.54" layer="97" rot="R180">+5V</text>
+<text x="205.74" y="88.9" size="2.54" layer="97" rot="R180">GND</text>
+<text x="205.74" y="104.14" size="2.54" layer="97" rot="R180">D-</text>
+<text x="205.74" y="96.52" size="2.54" layer="97" rot="R180">D+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

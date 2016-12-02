@@ -3,13 +3,6 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <avr/power.h>
-#include <SBIT.H>
-
-#define LEDG            SBIT( PORTA, 3 )
-#define LEDR            SBIT( PORTA, 2 )
-
-#define SWITCH            SBIT( PINA, 1 )
-
 
 void initIO(void) {
 /*       PDIP/SOIC Pinout:
@@ -23,9 +16,8 @@ void initIO(void) {
 */
     
  //Initial setup:
-    
  // MCUCR = 0x40; // Uncomment to disable internal pull ups
-    DDRA =  0b11111101; //Port A data direction register [DDA7:DDA0] (0=input 1=output)
+    DDRA =  0b11111111; //Port A data direction register [DDA7:DDA0] (0=input 1=output)
     DDRB =  0xFF; //Port B data direction register [DDB3:DDB0] (0=input 1=output)
     PORTA = 0b00000000; //Port A data register [PORTA7:PORTA0]
     PORTB = 0b00000000; //Port B data register [PORTA3:PORTB0]
@@ -58,37 +50,15 @@ void initIO(void) {
     OCR0B = 50;
 }
 
-
-void PWM_EN(void) {
-    
-}
-
-
-
-
 int main(void) {
     
 	initIO();
 
-    LEDR = 1;
+    
 	while (1) {
-        
-        if (SWITCH) {
-            LEDG = 1;
-            _delay_ms(50);
-            LEDG = 0;
-            _delay_ms(50);
-        }
-        
-        else {
-            LEDG = 1;
-            LEDR = 0;
-            _delay_ms(500);
-            LEDG = 0;
-            LEDR = 1;
-            _delay_ms(500);
-        }
-
+	/*
+        do nothing
+    */
      }
 	return 0; // never reached
 }

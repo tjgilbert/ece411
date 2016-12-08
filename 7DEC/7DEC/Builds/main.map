@@ -115,7 +115,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000       0x86
+.text           0x0000000000000000       0xe8
  *(.vectors)
  .vectors       0x0000000000000000       0x22 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/../../../../avr/lib/avr25/crttn44.o
                 0x0000000000000000                __vectors
@@ -185,31 +185,32 @@ END GROUP
                 0x0000000000000032                __vector_14
                 0x0000000000000032                __vector_10
                 0x0000000000000032                __vector_1
- .text          0x0000000000000034       0x4a Builds/main.o
+ .text          0x0000000000000034       0x48 Builds/main.o
                 0x0000000000000034                initIO
- .text          0x000000000000007e        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
-                0x000000000000007e                . = ALIGN (0x2)
+                0x0000000000000068                pwm
+ .text          0x000000000000007c        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x000000000000007c                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x000000000000007e        0x4 Builds/main.o
-                0x000000000000007e                main
+ .text.startup  0x000000000000007c       0x68 Builds/main.o
+                0x000000000000007c                main
  .text.libgcc.mul
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
- .text.libgcc   0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
-                0x0000000000000082                . = ALIGN (0x2)
+                0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000082        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
-                0x0000000000000082                exit
-                0x0000000000000082                _exit
+ .fini9         0x00000000000000e4        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+                0x00000000000000e4                exit
+                0x00000000000000e4                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -228,11 +229,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000082        0x4 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
+ .fini0         0x00000000000000e4        0x4 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/avr25/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000000086                _etext = .
+                0x00000000000000e8                _etext = .
 
-.data           0x0000000000800060        0x0 load address 0x0000000000000086
+.data           0x0000000000800060        0x0 load address 0x00000000000000e8
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800060        0x0 /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/../../../../avr/lib/avr25/crttn44.o
@@ -255,8 +256,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x0000000000800060                PROVIDE (__bss_end, .)
-                0x0000000000000086                __data_load_start = LOADADDR (.data)
-                0x0000000000000086                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000000e8                __data_load_start = LOADADDR (.data)
+                0x00000000000000e8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800060        0x0
                 0x0000000000800060                PROVIDE (__noinit_start, .)
@@ -281,13 +282,13 @@ END GROUP
 .signature
  *(.signature*)
 
-.stab           0x0000000000000000      0x618
+.stab           0x0000000000000000      0x780
  *(.stab)
- .stab          0x0000000000000000      0x618 Builds/main.o
+ .stab          0x0000000000000000      0x780 Builds/main.o
 
-.stabstr        0x0000000000000000      0xeae
+.stabstr        0x0000000000000000      0xf62
  *(.stabstr)
- .stabstr       0x0000000000000000      0xeae Builds/main.o
+ .stabstr       0x0000000000000000      0xf62 Builds/main.o
 
 .stab.excl
  *(.stab.excl)
@@ -411,3 +412,4 @@ exit                                              /usr/local/Cellar/avr-gcc/4.8.
 initIO                                            Builds/main.o
 main                                              Builds/main.o
                                                   /usr/local/Cellar/avr-gcc/4.8.3/lib/gcc/avr/4.8.3/../../../../avr/lib/avr25/crttn44.o
+pwm                                               Builds/main.o

@@ -5958,31 +5958,27 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 <package name="DCJACK_2MM_PTH">
 <description>DJ Jack 2.0mm PTH Right-Angle</description>
-<wire x1="4.5" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0" x2="4.5" y2="3.3" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0" x2="-4.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3.3" x2="4.5" y2="8.4" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="14.2" x2="4.5" y2="13.1" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="14.2" x2="-2.6" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="4.5" y2="3.3" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="4.5" y2="3.3" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="12.45" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="12.45" x2="-4.5" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3.3" x2="4.5" y2="8.35" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="8.35" x2="4.5" y2="8.4" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="14.2" x2="2.65" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="14.2" x2="2.65" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="2.65" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="14.2" x2="4.5" y2="8.35" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="12.45" x2="4.4" y2="12.45" width="0.2032" layer="51"/>
-<pad name="PWR" x="0" y="13.6" drill="3.2"/>
-<pad name="GND" x="0" y="7.35" drill="2.8"/>
-<pad name="GNDBREAK" x="4.8" y="10.75" drill="2.8" rot="R90"/>
-<text x="-5.08" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.35" y="0" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-3.302" y="1.27" size="0.8128" layer="51">DC 2.0/2.1</text>
+<wire x1="-4.5" y1="-4.04" x2="-2.4" y2="-4.04" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="6.86" x2="4.5" y2="10.16" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="10.16" x2="-4.5" y2="6.86" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="10.16" x2="4.5" y2="10.16" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="6.86" x2="-4.5" y2="1.76" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-4.04" x2="-4.5" y2="-2.94" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="6.86" x2="4.5" y2="-4.04" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-4.04" x2="2.6" y2="-4.04" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="6.86" x2="-4.5" y2="6.86" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="6.86" x2="-4.5" y2="6.86" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="6.86" x2="4.5" y2="-2.29" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="-2.29" x2="4.5" y2="-4.04" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="-4.04" x2="-4.5" y2="-4.04" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="-4.04" x2="-4.5" y2="6.86" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="-2.29" x2="-4.4" y2="-2.29" width="0.2032" layer="51"/>
+<pad name="PWR" x="0" y="-3" drill="3.5" rot="R180"/>
+<pad name="GND" x="0" y="3" drill="3.5" rot="R180"/>
+<pad name="GNDBREAK" x="-4.8" y="0" drill="3" rot="R270"/>
+<text x="5.08" y="10.16" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="-6.35" y="10.16" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+<text x="3.302" y="8.89" size="0.8128" layer="51" rot="R180">DC 2.0/2.1</text>
 </package>
 <package name="DCJACK_2MM_SMT">
 <description>2.0/2.1mm DC Jack - SMT
@@ -11791,7 +11787,7 @@ Based on the following sources:&lt;p&gt;
 <wire x1="101.6" y1="27.94" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
 <wire x1="0" y1="15.24" x2="0" y2="27.94" width="0.1016" layer="94"/>
 <text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94">11/2/2016</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">11/15/2016</text>
 <text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
 <text x="86.36" y="1.27" size="2.54" layer="94">2/2</text>
 <text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
@@ -14045,7 +14041,7 @@ TS-003</description>
 <connects>
 <connect gate="A1" pin="ADJ" pad="1"/>
 <connect gate="A1" pin="VI" pad="3"/>
-<connect gate="A1" pin="VO" pad="4"/>
+<connect gate="A1" pin="VO" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>

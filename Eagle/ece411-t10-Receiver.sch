@@ -6160,7 +6160,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$3" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="5V" class="0">
 <segment>
 <wire x1="139.7" y1="111.76" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="C"/>
@@ -6203,7 +6203,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="179.07" y1="96.52" x2="175.26" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A"/>
 <wire x1="121.92" y1="111.76" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
